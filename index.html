@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" header></script>
+    <title>Calculadora de iPhone</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="calculator">
+        <div class="display">
+            <p type="text" id="resultado" placeholder="0"></p>
+        </div>
+        <div class="buttons">
+            <button class="limpar" onclick="limparCampoInput('resultado')">C</button>
+            <button class="operator" onclick=" removerNumero()" ><</button>
+            <button class="operator" onclick="pegar('%')">%</button>
+            <button class="operator" onclick="pegar('/')">/</button>
+
+            <button class="botao" onclick="pegar('7')">7</button>
+            <button class="botao" onclick="pegar('8')">8</button>
+            <button class="botao" onclick="pegar('9')">9</button>
+            <button class="operator" onclick="pegar('*')">*</button>
+
+            <button class="botao" onclick="pegar('4')">4</button>
+            <button class="botao" onclick="pegar('5')">5</button>
+            <button class="botao" onclick="pegar('6')">6</button>
+            <button class="operator" onclick="pegar('-')">-</button>
+
+            <button class="botao" onclick="pegar('1')">1</button>
+            <button class="botao" onclick="pegar('2')">2</button>
+            <button class="botao" onclick="pegar('3')">3</button>
+
+            <button class="operator" onclick="pegar('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="botao" onclick="pegar('0')">0</button>
+            <button id="igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+</body>
+</html>
